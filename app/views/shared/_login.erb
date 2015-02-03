@@ -1,0 +1,17 @@
+<br/><br/><br/><br/><br/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+	function auth(){
+		window.location.assign("/auth/joshid")
+	}
+</script>
+<% if flash[:notice] %>
+  <p><%=flash[:notice] %> </p>
+  <% flash[:notice] = nil %>
+<% end %>
+<% if not @current_user %>
+ <%= link_to 'login', '#', :onclick => 'auth()' %>
+<% else %> 
+  <h1>Hello <%= "#{@current_user.first_name} #{@current_user.last_name}" %> !</h1>
+ <%= link_to 'logout', '/logout' %>
+<% end %>

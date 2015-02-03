@@ -1,4 +1,16 @@
-<form action="http://192.81.129.100/auth/josh_id/create_form?oauth_token=<%= @token %>" method="post">
+
+<% if params[:sub] %>
+  <p><%= params[:sub] %> </p>
+  <% params[:sub] = nil %>
+<% end %>
+<% if not @current_user %>
+ <%= link_to 'login', '/auth/josh_id' %>
+<% else %> 
+  <h1>Hello <%= "#{@current_user.first_name} #{@current_user.last_name}" %> !</h1>
+ <%= link_to 'logout', '/logout' %>
+<br/><br/><br/><br/><br/>
+ 
+ <form action="http://192.81.129.100/auth/josh_id/create_form?oauth_token=<%= @token %>" method="post">
 
 Form type:
 <input type="text" name="type" value="form4">
@@ -246,15 +258,6 @@ nature_of_indirect:
 <input type="submit" value="Submit">
 </form>
 
-<br/><br/><br/><br/><br/>
 
-<% if flash[:notice] %>
-  <p><%=flash[:notice] %> </p>
-  <% flash[:notice] = nil %>
 <% end %>
-<% if not @current_user %>
- <%= link_to 'login', '/auth/josh_id' %>
-<% else %> 
-  <h1>Hello <%= "#{@current_user.first_name} #{@current_user.last_name}" %> !</h1>
- <%= link_to 'logout', '/logout' %>
-<% end %>
+

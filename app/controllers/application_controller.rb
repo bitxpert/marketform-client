@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
     if !current_user
       respond_to do |format|
         format.html  {
-          redirect_to '/auth/joshid'
+          render partial: "/shared/login"
         }
         format.json {
           render :json => { 'error' => 'Access Denied' }.to_json
@@ -17,6 +17,9 @@ class ApplicationController < ActionController::Base
   def current_user
     return nil unless session[:user_id]
     @current_user ||= User.find_by_uid(session[:user_id]['uid'])
+  end
+
+  def authorize_page
   end
 
 end
