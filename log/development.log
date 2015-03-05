@@ -4937,3 +4937,235 @@ Served asset /application.css - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 14:40:19 +0500
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 16:42:11 +0500
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+LoadError (Please install the sqlite3 adapter: `gem install activerecord-sqlite3-adapter` (sqlite3 is not part of the bundle. Add it to Gemfile.)):
+  bundler (1.6.2) lib/bundler/rubygems_integration.rb:252:in `block in replace_gem'
+  activerecord (3.2.8) lib/active_record/connection_adapters/sqlite3_adapter.rb:3:in `<top (required)>'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:251:in `require'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:251:in `block in require'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:236:in `load_dependency'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:251:in `require'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:50:in `resolve_hash_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:41:in `resolve_string_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:25:in `spec'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:129:in `establish_connection'
+  activerecord (3.2.8) lib/active_record/railtie.rb:82:in `block (2 levels) in <class:Railtie>'
+  activesupport (3.2.8) lib/active_support/lazy_load_hooks.rb:36:in `instance_eval'
+  activesupport (3.2.8) lib/active_support/lazy_load_hooks.rb:36:in `execute_hook'
+  activesupport (3.2.8) lib/active_support/lazy_load_hooks.rb:43:in `block in run_load_hooks'
+  activesupport (3.2.8) lib/active_support/lazy_load_hooks.rb:42:in `each'
+  activesupport (3.2.8) lib/active_support/lazy_load_hooks.rb:42:in `run_load_hooks'
+  activerecord (3.2.8) lib/active_record/base.rb:721:in `<top (required)>'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__3928602891526894444__call__1239082757193059596__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/waqas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/waqas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/waqas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waqas/.rvm/gems/ruby-2.1.2@doorkeeper/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/waqas/.rvm/gems/ruby-2.1.2@doorkeeper/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/waqas/.rvm/gems/ruby-2.1.2@doorkeeper/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 16:44:03 +0500
+Connecting to database specified by database.yml
+
+PG::ConnectionBad (FATAL:  role "waqas" does not exist
+):
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1213:in `initialize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1213:in `new'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:1213:in `connect'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:329:in `initialize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+  activerecord (3.2.8) lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:309:in `new_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:319:in `checkout_new_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:241:in `block (2 levels) in checkout'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `loop'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:236:in `block in checkout'
+  /home/waqas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:233:in `checkout'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:96:in `block in connection'
+  /home/waqas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__2732257569873018040__call__4207420517800745631__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/waqas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/waqas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/waqas/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/waqas/.rvm/gems/ruby-2.1.2@doorkeeper/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/waqas/.rvm/gems/ruby-2.1.2@doorkeeper/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/waqas/.rvm/gems/ruby-2.1.2@doorkeeper/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (57.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (1.6ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'schema_migrations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (64.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.5ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateUsers (20101007212537)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (107.1ms)[0m  CREATE TABLE "users" ("id" serial primary key, "uid" character varying(255), "first_name" character varying(255), "last_name" character varying(255), "status" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20101007212537')[0m
+  [1m[35m (16.9ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mPK and serial sequence (1.4ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"users"'::regclass
+
+  [1m[36m (1.4ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 16:48:35 +0500
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1[0m
+  Rendered shared/_login.erb (1.1ms)
+Filter chain halted as :login_required rendered or redirected
+Completed 200 OK in 94ms (Views: 21.0ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/auth/joshid" for 127.0.0.1 at 2015-03-05 16:48:38 +0500
+
+
+Started GET "/auth/joshid/callback?code=c8d8d154328bb336eeb9ccfc529c3373&response_type=code&state=982ed9600392bf4283c161bc4f93c624e3179f5e7065c04a" for 127.0.0.1 at 2015-03-05 16:49:01 +0500
+Processing by UserSessionsController#create as HTML
+  Parameters: {"code"=>"c8d8d154328bb336eeb9ccfc529c3373", "response_type"=>"code", "state"=>"982ed9600392bf4283c161bc4f93c624e3179f5e7065c04a", "provider"=>"joshid"}
++++ #<OmniAuth::AuthHash credentials=#<Hashie::Mash expires=true expires_at=1425557943 refresh_token="3a5ca8922bb3ec82c3f365b6c838a71d" token="1869fc1c90937b2366a3f46c4bec6321"> extra=#<Hashie::Mash first_name=nil last_name=nil> info=#<OmniAuth::AuthHash::InfoHash email=nil> provider="joshid" uid="1">
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (44.4ms)[0m  INSERT INTO "users" ("created_at", "first_name", "last_name", "status", "uid", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Thu, 05 Mar 2015 11:49:05 UTC +00:00], ["first_name", nil], ["last_name", nil], ["status", nil], ["uid", "1"], ["updated_at", Thu, 05 Mar 2015 11:49:05 UTC +00:00]]
+  [1m[36m (41.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 95ms (ActiveRecord: 86.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 16:49:05 +0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 16:49:05 +0500
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 16:49:05 +0500
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 16:49:56 +0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 16:49:59 +0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 16:50:19 +0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 16:51:30 +0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
