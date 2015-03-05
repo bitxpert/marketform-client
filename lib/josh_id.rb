@@ -3,7 +3,7 @@ module OmniAuth
   module Strategies
     class JoshId < OmniAuth::Strategies::OAuth2
 
-      CUSTOM_PROVIDER_URL = 'http://192.81.129.100'
+      CUSTOM_PROVIDER_URL = 'https://marketforms-staging.herokuapp.com'
 
       option :client_options, {
         :site =>  CUSTOM_PROVIDER_URL,

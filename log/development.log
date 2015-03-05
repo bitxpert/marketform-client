@@ -4714,3 +4714,226 @@ Processing by HomeController#index as HTML
   [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = '488' LIMIT 1
   Rendered home/index.html.erb within layouts/application (0.2ms)
 Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 13:42:36 +0500
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered shared/_login.erb (11.1ms)
+Filter chain halted as :login_required rendered or redirected
+Completed 200 OK in 87ms (Views: 86.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 13:42:37 +0500
+Processing by HomeController#index as HTML
+  Rendered shared/_login.erb (0.2ms)
+Filter chain halted as :login_required rendered or redirected
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 13:42:57 +0500
+Processing by HomeController#index as HTML
+  Rendered shared/_login.erb (0.1ms)
+Filter chain halted as :login_required rendered or redirected
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/joshid" for 127.0.0.1 at 2015-03-05 13:43:01 +0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 13:44:08 +0500
+Processing by HomeController#index as HTML
+  Rendered shared/_login.erb (0.1ms)
+Filter chain halted as :login_required rendered or redirected
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:03:35 +0500
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered shared/_login.erb (1.0ms)
+Filter chain halted as :login_required rendered or redirected
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/joshid" for 127.0.0.1 at 2015-03-05 14:03:38 +0500
+
+
+Started GET "/auth/joshid/callback?code=d1b3ffaab45669c80547f5edd4f818a1&response_type=code&state=3be02d553b809ce89c99e85126b3b017979af3bac98f9eaf" for 127.0.0.1 at 2015-03-05 14:03:39 +0500
+Processing by UserSessionsController#create as HTML
+  Parameters: {"code"=>"d1b3ffaab45669c80547f5edd4f818a1", "response_type"=>"code", "state"=>"3be02d553b809ce89c99e85126b3b017979af3bac98f9eaf", "provider"=>"joshid"}
++++ #<OmniAuth::AuthHash credentials=#<Hashie::Mash expires=true expires_at=1425548021 refresh_token="8a16e829d021bb6a998bfe00ea8dffc6" token="29394bcefe9e421db1b3c0732a54f810"> extra=#<Hashie::Mash first_name=nil last_name=nil> info=#<OmniAuth::AuthHash::InfoHash email=nil> provider="joshid" uid="1">
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (34.3ms)[0m  [1mINSERT INTO "users" ("created_at", "first_name", "last_name", "status", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 05 Mar 2015 09:03:42 UTC +00:00], ["first_name", nil], ["last_name", nil], ["status", nil], ["uid", "1"], ["updated_at", Thu, 05 Mar 2015 09:03:42 UTC +00:00]]
+  [1m[35m (122.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 237ms (ActiveRecord: 158.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:03:43 +0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 63ms (Views: 62.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 14:03:43 +0500
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 14:03:43 +0500
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:09:56 +0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2015-03-05 14:10:26 +0500
+Processing by UserSessionsController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1[0m
+Redirected to https://marketforms-staging.herokuapp.com/users/sign_out
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:10:37 +0500
+Processing by HomeController#index as HTML
+  Rendered shared/_login.erb (0.1ms)
+Filter chain halted as :login_required rendered or redirected
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/joshid" for 127.0.0.1 at 2015-03-05 14:10:45 +0500
+
+
+Started GET "/auth/joshid/callback?code=824585fcbf3344cda5c1a32a2d7b0798&response_type=code&state=88083689976144b3a3f76ff0176bd565fc1d126c3952ae18" for 127.0.0.1 at 2015-03-05 14:10:51 +0500
+Processing by UserSessionsController#create as HTML
+  Parameters: {"code"=>"824585fcbf3344cda5c1a32a2d7b0798", "response_type"=>"code", "state"=>"88083689976144b3a3f76ff0176bd565fc1d126c3952ae18", "provider"=>"joshid"}
++++ #<OmniAuth::AuthHash credentials=#<Hashie::Mash expires=true expires_at=1425548454 refresh_token="1e450d706a3e25802365e56d2771b60c" token="493ce8ee5a4de4f408cf10439d5a762c"> extra=#<Hashie::Mash first_name=nil last_name=nil> info=#<OmniAuth::AuthHash::InfoHash email=nil> provider="joshid" uid="1">
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:10:55 +0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 14:10:55 +0500
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 14:10:55 +0500
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2015-03-05 14:11:10 +0500
+Processing by UserSessionsController#destroy as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1
+Redirected to https://marketforms-staging.herokuapp.com/users/sign_out
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:36:22 +0500
+Processing by HomeController#index as HTML
+  Rendered shared/_login.erb (0.1ms)
+Filter chain halted as :login_required rendered or redirected
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/joshid" for 127.0.0.1 at 2015-03-05 14:36:24 +0500
+
+
+Started GET "/auth/joshid/callback?code=8ee03b86bfd94931d79d6ca93c98b618&response_type=code&state=310f0999334b1e5d1dac02b355ffc8ef3d182bc36085f3a1" for 127.0.0.1 at 2015-03-05 14:36:29 +0500
+Processing by UserSessionsController#create as HTML
+  Parameters: {"code"=>"8ee03b86bfd94931d79d6ca93c98b618", "response_type"=>"code", "state"=>"310f0999334b1e5d1dac02b355ffc8ef3d182bc36085f3a1", "provider"=>"joshid"}
++++ #<OmniAuth::AuthHash credentials=#<Hashie::Mash expires=true expires_at=1425549991 refresh_token="64f0326f09a2d3db007a1cc1ee669d15" token="b1391f66b860d9520f9f17810b573c4e"> extra=#<Hashie::Mash first_name=nil last_name=nil> info=#<OmniAuth::AuthHash::InfoHash email=nil> provider="joshid" uid="1">
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:36:32 +0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 14:36:32 +0500
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 14:36:32 +0500
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:37:10 +0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 14:37:10 +0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 14:37:10 +0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:37:23 +0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 14:37:23 +0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 14:37:23 +0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:39:40 +0500
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 14:39:41 +0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 14:39:41 +0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-05 14:40:19 +0500
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."uid" = '1' LIMIT 1
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-05 14:40:19 +0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-05 14:40:19 +0500
+Served asset /application.js - 304 Not Modified (0ms)

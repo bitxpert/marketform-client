@@ -10,8 +10,8 @@
  <%= link_to 'logout', '/logout' %>
 <br/><br/><br/><br/><br/>
  
- <form action="http://192.81.129.100/auth/josh_id/create_form?oauth_token=<%= @token %>" method="post">
-
+ <form action="https://marketforms-staging.herokuapp.com/auth/josh_id/create_form" method="post">
+<input type="hidden" name="oauth_token" value="<%= @token %>"> 
 Form type:
 <input type="text" name="type" value="form4">
 <br>
